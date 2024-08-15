@@ -1149,7 +1149,7 @@ require.config({
         jqueryui         : './public/js/libs/jquery-ui.min',
         jqueryBarcode    : './public/js/libs/jquery-barcode.min',
         Underscore       : './public/js/libs/underscore-min.map.1.6.0',
-        Backbone         : './public/js/libs/backbone-min.map.1.1.2',
+        Backbone         : './public/js/libs/backbone-min.map.js.1.1.2',
         text             : './public/js/libs/text',
         Validation       : './public/js/Validation',
         custom           : './public/js/custom',

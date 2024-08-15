@@ -9,8 +9,8 @@ process.env.OXR_APP_ID = '451784939cd549259b92764b7c4eced3';
 
 process.env.SERVER_TYPE = 'openSource';
 process.env.SERVER_PLATFORM = 'openSource';
-process.env.SOCKET_DB_PORT = 6379;
-process.env.SOCKET_DB_HOST = 'localhost';
+process.env.SOCKET_DB_PORT = 16562;
+process.env.SOCKET_DB_HOST = 'redis-16562.c311.eu-central-1-1.ec2.redns.redis-cloud.com';
 process.env.SOCKET_DB = 9;
 
 process.env.RABBITMQ_HOST = 'localhost';

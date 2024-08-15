@@ -40,6 +40,7 @@ define([
         render: function () {
             var formString = this.template({data: GUIDES});
 
+            debugger;
             this.$el = $(formString).dialog({
                 dialogClass: 'create-dialog',
                 title      : 'Create Employee',

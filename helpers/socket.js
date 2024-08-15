@@ -15,14 +15,16 @@ module.exports = function (server) {
         parseInt(process.env.SOCKET_DB_PORT, 10),
         process.env.SOCKET_DB_HOST,
         {
-            return_buffers: true
+            return_buffers: true,
+            auth_pass     : "FaHmT3vuLLkfiLDfzyq9UIreqPvSpsHj"
         }
     );
     var sub = redis.createClient(
         parseInt(process.env.SOCKET_DB_PORT, 10),
         process.env.SOCKET_DB_HOST,
         {
-            return_buffers: true
+            return_buffers: true,
+            auth_pass     : "FaHmT3vuLLkfiLDfzyq9UIreqPvSpsHj"
         }
     );
 
@@ -33,9 +35,6 @@ module.exports = function (server) {
         'polling',
         'xhr-polling'
     ]);
-
-    pub.select(parseInt(process.env.SOCKET_DB, 10));
-    sub.select(parseInt(process.env.SOCKET_DB, 10));
 
     io.adapter(adapter({
         host     : process.env.SOCKET_DB_HOST,

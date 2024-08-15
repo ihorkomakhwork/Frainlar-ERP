@@ -3,17 +3,11 @@
     var config = {
         db  : 1,
         host: process.env.SOCKET_DB_HOST || 'localhost',
-        port: parseInt(process.env.SOCKET_DB_PORT, 10) || 6379
+        port: parseInt(process.env.SOCKET_DB_PORT, 10) || 6379,
     };
     var redis = require('redis');
-    var client = redis.createClient(config.port, config.host, {});
-
-    client.select(config.db, function (err) {
-        if (err) {
-            throw new Error(err);
-        }
-
-        console.log('----Selected Redis DB With index = ' + config.db);
+    var client = redis.createClient(config.port, config.host, {
+        auth_pass     : "FaHmT3vuLLkfiLDfzyq9UIreqPvSpsHj"
     });
 
     client.on('error', function (err) {

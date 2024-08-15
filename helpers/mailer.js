@@ -1,5 +1,5 @@
 module.exports = function () {
-    var _ = require('../public/js/libs/underscore-min.map.1.6.0.js');
+    var _ = require('../public/js/libs/underscore/underscore');
     var nodemailer = require('nodemailer');
     var smtpTransportObject = require('../config/mailer').noReplay;
     var registerNewUserSaaS = require('../config/mailer').registerNewUserSaaS;
